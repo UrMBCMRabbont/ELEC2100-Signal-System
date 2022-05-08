@@ -1,0 +1,10 @@
+t = 0:(1/75600):(1/80);
+x = 6*exp(j*160*pi*t);
+figure(1);
+plot(t, abs(x), 'm'); grid; ylabel('|x(t)|'); xlabel('time (sec)');
+figure(2);
+plot(t, angle(x), 'm'); grid; ylabel('< x(t)'); xlabel('time (sec)');
+figure(3);
+plot(t, real(x), '.'); grid; ylabel('Re[x(t)]'); xlabel('time (sec)');
+figure(4);
+plot(t, imag(x), '.'); grid; ylabel('Im[x(t)]'); xlabel('time (sec)');
